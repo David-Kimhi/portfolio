@@ -1,38 +1,46 @@
 const Contact = () => {
     return (
-      <section className="bg-white py-10 px-4">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl font-semibold mb-4">Contact</h2>
-          <ul className="text-gray-700 space-y-2">
-            <li>
-              📧 Email:{' '}
-              <a href="mailto:david@example.com" className="text-blue-500 hover:underline">
-                david@example.com
+      <section className="bg-gray py-16 px-6 md:px-10 lg:px-20">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-2xl md:text-3xl font-semibold text-[color:#267298] mb-8">
+            Contact
+          </h2>
+  
+          <div className="space-y-4 text-[color:#267298] text-base md:text-lg">
+            <p>
+              Email:{' '}
+              <a
+                href="mailto:radakdk@gmail.com"
+                className="underline hover:text-[color:#c48074] transition"
+              >
+                radakdk@gmail.com
               </a>
-            </li>
-            <li>
-              💼 LinkedIn:{' '}
+            </p>
+  
+            <p>
+              LinkedIn:{' '}
               <a
                 href="https://www.linkedin.com/in/david-kimhi"
-                className="text-blue-500 hover:underline"
+                className="underline hover:text-[color:#c48074] transition"
                 target="_blank"
                 rel="noreferrer"
               >
                 linkedin.com/in/david-kimhi
               </a>
-            </li>
-            <li>
-              🧑‍💻 GitHub:{' '}
+            </p>
+  
+            <p>
+              GitHub:{' '}
               <a
                 href="https://github.com/David-Kimhi"
-                className="text-blue-500 hover:underline"
+                className="underline hover:text-[color:#c48074] transition"
                 target="_blank"
                 rel="noreferrer"
               >
                 github.com/David-Kimhi
               </a>
-            </li>
-          </ul>
+            </p>
+          </div>
         </div>
       </section>
     );
