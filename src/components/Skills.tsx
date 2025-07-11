@@ -1,5 +1,5 @@
 const skillGroups = {
-    'Languages & Frameworks:': ['Python', 'TypeScript', 'SQL', 'Node.js', 'React'],
+    'Languages & Frameworks:': ['Python', 'PySpark', 'Pandas', 'Scikit-Learn', 'TypeScript', 'SQL', 'Node.js', 'React'],
     'Backend & Data Engineering:': ['ETL', 'APIs', 'MongoDB', 'Docker', 'VPS'],
     'Azure Cloud:': [
       'Azure Data Factory',
