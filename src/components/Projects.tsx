@@ -34,42 +34,64 @@ const projects = [
   
   const Projects = () => {
     return (
-      <section className="bg-[color:#bed5e0] py-16 px-6 md:px-10 lg:px-20">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-2xl tracking-wider md:text-3xl font-semibold text-[color:#267298] mb-6 text-center [font-family:'Dancing_Script',cursive]">
-            Projects
-          </h2>
+      <section
+        className="
+          bg-[color:#bed5e0] 
+          py-16 md:py-16 
+          px-6 md:px-10 lg:px-20 
+          h-screen md:h-auto
+          snap-start md:snap-none 
+          flex items-center
+        "
+      >
+      <div className="w-full md:max-w-7xl md:mx-auto">
+        <h2 className="text-2xl tracking-wider md:text-3xl font-semibold text-[color:#267298] mb-6 text-center [font-family:'Dancing_Script',cursive]">
+          Projects
+        </h2>
   
-          <div className="overflow-x-auto">
-            <div className="flex gap-6 md:gap-8 w-max px-1">
+          <div className="overflow-x-auto -mx-6 md:-mx-10 lg:-mx-20 px-6 md:px-10 lg:px-20">
+            <div className="flex gap-6 md:gap-8">
               {projects.map((project, index) => (
                 <div
-                    key={index}
-                    className="w-[70vw] md:w-[40vw] lg:w-[20vw] bg-[color:#e9f1f5] shadow-md rounded-lg p-6 flex flex-col justify-between"
+                  key={index}
+                  className="
+                    min-w-[80vw] md:min-w-[20vw] 
+                    max-w-[90vw] 
+                    h-[300px] 
+                    md:w-[40vw] md:h-auto 
+                    lg:w-[20vw] lg:h-auto
+                    bg-[color:#e9f1f5] 
+                    shadow-md rounded-lg p-4 
+                    flex flex-col justify-between
+                  "
+
                 >
-                <div>
-                    <h3 className="text-xl font-semibold text-[color:#113243] mb-2">{project.title}</h3>
-                    <p className="text-gray-700 text-sm leading-relaxed">{project.description}</p>
-                </div>
-                <div className="mt-4">
+                  <div>
+                    <h3 className="text-xl font-semibold text-[color:#113243] mb-2">
+                      {project.title}
+                    </h3>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      {project.description}
+                    </p>
+                  </div>
+                  <div className="mt-4">
                     <a
-                        href={project.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-base text-[color:#3bb2ed] hover:underline"
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-base text-[color:#3bb2ed] hover:underline"
                     >
-                        View project →
+                      View project →
                     </a>
+                  </div>
                 </div>
-            </div>
-              
               ))}
             </div>
           </div>
         </div>
       </section>
     );
-  };
+  };  
   
   export default Projects;
   

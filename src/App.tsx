@@ -7,14 +7,17 @@ import Contact from './components/Contact';
 
 const App: React.FC = () => {
   return (
-    <div>
+
+    <div className="h-screen overflow-y-scroll snap-y snap-mandatory md:bg-white md:snap-none">
       <Header />
       <About />
       <Projects />
       <Skills />
       <Contact />
     </div>
+
   );
+  
 };
 
 export default App;
