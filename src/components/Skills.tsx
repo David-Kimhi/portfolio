@@ -12,7 +12,16 @@ const skillGroups = {
   
   const Skills = () => {
     return (
-      <section className="bg-[color:#e9f1f5] py-16 px-6 md:px-10 lg:px-20">
+      <section
+        className="
+          bg-[color:#e9f1f5] 
+          py-16 md:py-16 
+          px-6 md:px-10 lg:px-20 
+          h-screen md:h-auto 
+          snap-start md:snap-none 
+          flex items-center
+        "
+      >
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-semibold text-[color:#267298] mb-8">
             Skills

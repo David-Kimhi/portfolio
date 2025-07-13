@@ -7,7 +7,7 @@ import Contact from './components/Contact';
 
 const App: React.FC = () => {
   return (
-    <div>
+    <div className="h-screen overflow-y-scroll snap-y snap-mandatory md:overflow-visible md:snap-none">
       <Header />
       <About />
       <Projects />
@@ -15,6 +15,7 @@ const App: React.FC = () => {
       <Contact />
     </div>
   );
+  
 };
 
 export default App;
